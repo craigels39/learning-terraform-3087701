@@ -33,7 +33,7 @@ module "blog_sg" {
   source  = "terraform-aws-modules/security-group/aws"
   version = "4.16.1"
   vpc_id  = data.aws_vpc.default.id
-  name    = "blog_new
+  name    = "blog_new"
   
   ingress_rules       = ["http-80-tcp", "https=443-tcp"]
   ingress_cidr_blocks = "0.0.0.0/0"
